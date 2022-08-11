@@ -1,0 +1,15 @@
+@import "../variables.scss";
+
+.nav-bar {
+  height: 70px;
+  background-color: $primary-color;
+  img {
+    width: 250px;
+    height: 100%;
+  }
+}
+.nav-bar--wrapper {
+  max-width: $web-width;
+  margin: 0px auto;
+  height: 100%;
+}
