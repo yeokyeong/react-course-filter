@@ -1,0 +1,42 @@
+@import "../variables.scss";
+
+.course-item {
+  display: flex;
+  width: 100%;
+  min-height: 200px;
+  margin: 10px 0 10px 0;
+  border-left: 3px solid $accent-color;
+  box-shadow: rgba(46, 46, 46, 0.1) 0px 3px 8px;
+  cursor: pointer;
+}
+.course-item--box {
+  padding: 30px;
+}
+.course-item__info {
+  width: 60%;
+  background-color: $white-color;
+}
+.info__text {
+  display: block;
+  max-width: 80%;
+}
+.info__title {
+  font-size: 30px;
+  margin: 10px 0 20px 0;
+  font-weight: 600;
+}
+
+.course-item__skills {
+  background-color: $gray-color;
+  width: 40%;
+}
+.skills__text {
+  display: block;
+  padding: 6px 0;
+  border-top: 1px solid $gray-accent-color;
+}
+.skills__title {
+  font-weight: 600;
+  padding-top: 7px;
+  border-top: 3px solid $black-color;
+}

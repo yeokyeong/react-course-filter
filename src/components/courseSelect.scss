@@ -1,0 +1,19 @@
+@import "../variables.scss";
+
+.course-select {
+  max-width: $web-width;
+  background-color: $primary-color;
+  padding: 15px;
+
+  select {
+    padding: 10px;
+    border-radius: 3px;
+  }
+}
+.course-select__title {
+  display: block;
+  color: $white-color;
+  font-weight: 400;
+  font-size: 10px;
+  margin-bottom: 7px;
+}
