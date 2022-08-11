@@ -1,20 +1,22 @@
-@import "../variables.scss";
+@import "../styles/variables";
+@import "../styles/mixins";
+
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 .component-layout {
-  max-width: $web-width;
+  max-width: $breakpoint-desktop;
   margin: 0px auto;
 }
 /* section info */
 .section--info {
-  padding: 50px 0;
+  padding: 48px 0;
 }
 .info__title {
-  font-weight: 300;
-  margin: 5px 0 3px 0;
+  font-weight: 400;
+  margin: 8px 0 4px 0;
 }
 .info__sub-title {
   font-size: 10px;
@@ -26,7 +28,7 @@ ul {
 }
 /* section select */
 .section--select {
-  margin-top: -30px;
+  margin-top: -32px;
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -45,7 +47,7 @@ ul {
 }
 .result__count {
   font-weight: 600;
-  margin: 0 5px;
+  margin: 0 4px;
 }
 .course__more {
   display: flex;
@@ -57,6 +59,15 @@ ul {
     border-radius: 50px;
     width: 150px;
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 32px;
+  }
+}
+
+@include mobile {
+  .component-layout {
+    max-width: $breakpoint-mobile;
+  }
+  .info__desc {
+    max-width: 100%;
   }
 }
