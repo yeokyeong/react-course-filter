@@ -1,0 +1,62 @@
+@import "../variables.scss";
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.component-layout {
+  max-width: $web-width;
+  margin: 0px auto;
+}
+/* section info */
+.section--info {
+  padding: 50px 0;
+}
+.info__title {
+  font-weight: 300;
+  margin: 5px 0 3px 0;
+}
+.info__sub-title {
+  font-size: 10px;
+}
+.info__desc {
+  font-weight: 400;
+  font-size: 14px;
+  max-width: 50%;
+}
+/* section select */
+.section--select {
+  margin-top: -30px;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+/* section course */
+.section--course {
+  background-color: $base-color;
+  padding: 80px 0;
+}
+.course__result {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.result__count {
+  font-weight: 600;
+  margin: 0 5px;
+}
+.course__more {
+  display: flex;
+  justify-content: center;
+  button {
+    background-color: $base-color;
+    border: 1px solid $black-color;
+    padding: 20px;
+    border-radius: 50px;
+    width: 150px;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+}
