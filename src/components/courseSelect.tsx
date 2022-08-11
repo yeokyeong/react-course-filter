@@ -1,4 +1,5 @@
 import React from "react";
+import { capitalizeFirst } from "../utils/common";
 import "./courseSelect.scss";
 
 interface Props {
@@ -19,7 +20,7 @@ export const CourseSelect: React.FC<Props> = ({
         {courseTypes.map((item, idx) => {
           return (
             <option key={idx} value={item}>
-              {item}
+              {capitalizeFirst(item)}
             </option>
           );
         })}

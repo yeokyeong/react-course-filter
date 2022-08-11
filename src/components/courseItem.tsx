@@ -1,4 +1,5 @@
 import React from "react";
+import { capitalizeFirst } from "../utils/common";
 import "./courseItem.scss";
 
 interface Props {
@@ -10,7 +11,9 @@ export const CourseItem: React.FC<Props> = ({ course }) => {
   return (
     <li key={course.id} className="course-item">
       <div className="course-item--box course-item__info">
-        <span className="info__text">{course["course-type"]}</span>
+        <span className="info__text">
+          {capitalizeFirst(course["course-type"])}
+        </span>
         <span className="info__text info__title"> {course.title}</span>
         <span className="info__text"> {course.description}</span>
       </div>
